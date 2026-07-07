@@ -1,0 +1,66 @@
+backend:
+  name: github
+  repo: laetitiaheisler/laetitiaheisler
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "about"
+    label: "À propos"
+    folder: "_content"
+    create: false
+    extension: json
+    slug: "about"
+    fields:
+      - { label: "Bio (intro)", name: "bio_intro", widget: "text", required: true }
+      - { label: "Texte principal", name: "bio_main", widget: "text", required: true }
+      - { label: "Texte supplémentaire", name: "bio_extra", widget: "text", required: false }
+
+  - name: "contact"
+    label: "Contact"
+    folder: "_content"
+    create: false
+    extension: json
+    slug: "contact"
+    fields:
+      - { label: "Email", name: "email", widget: "string", required: true }
+      - { label: "Téléphone", name: "phone", widget: "string", required: true }
+      - { label: "Adresse (ligne 1)", name: "address1", widget: "string", required: true }
+      - { label: "Adresse (ligne 2)", name: "address2", widget: "string", required: true }
+      - { label: "Adresse (ligne 3)", name: "address3", widget: "string", required: true }
+      - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+      - { label: "Note finale", name: "note", widget: "text", required: false }
+
+  - name: "workshops"
+    label: "Workshops"
+    folder: "_content"
+    create: false
+    extension: json
+    slug: "workshops"
+    fields:
+      - { label: "Introduction", name: "intro", widget: "text", required: true }
+
+  - name: "works"
+    label: "Œuvres (Galerie)"
+    folder: "_content/works"
+    create: true
+    extension: md
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titre", name: "title", widget: "string", required: true }
+      - { label: "Description", name: "description", widget: "string", required: true }
+      - { label: "Image", name: "image", widget: "image", required: true }
+      - { label: "Ordre d'affichage", name: "order", widget: "number", default: 0, required: false }
+
+  - name: "news"
+    label: "Actualités"
+    folder: "_content/news"
+    create: true
+    extension: md
+    slug: "{{year}}-{{slug}}"
+    fields:
+      - { label: "Titre", name: "title", widget: "string", required: true }
+      - { label: "Date", name: "date", widget: "string", required: true }
+      - { label: "Contenu", name: "body", widget: "markdown", required: true }
