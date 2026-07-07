@@ -18,6 +18,13 @@
 - [x] Projet Cloudflare Pages déployé (Worker URL temporaire)
 - [x] Notice utilisateur : `NOTICE_UTILISATION.md` (locale uniquement, .gitignore)
 - [x] Doc de suivi : `cloudFlare_laetitiaheisler_site.md`
+- [x] Dossier renommé `site_code_replique` → `laetitiaheisler`
+- [x] Partage Samba configuré pour travail local (Mac + Linux)
+  - IP : `192.168.0.118`
+  - Connexion Mac : Finder → Cmd+K → `smb://192.168.0.118/laetitiaheisler`
+  - Identifiant : `at4ker` / Mot de passe : `Nirvana123`
+- [x] `NOTICE_UTILISATION.md` en local uniquement (`.gitignore`)
+- [x] `cloudFlare_laetitiaheisler_site.md` pushé sur GitHub (suivi)
 
 ### Comptes
 
@@ -30,14 +37,15 @@
 
 ### À faire
 
-- [ ] Uploader les 8 photos dans `images/` sur GitHub
+- [ ] Travailler le site en local via Samba (Mac + Linux)
+- [ ] Uploader les 8 photos dans `images/`
 - [ ] Finaliser le custom domain dans Cloudflare Pages
 - [ ] Résilier l'abonnement Squarespace site (garder domaine + email)
 
 ### Structure du projet
 
 ```
-/site_code_replique/
+/laetitiaheisler/
 ├── index.html          # Page d'accueil (Works)
 ├── about.html          # À propos
 ├── calendar.html       # Calendrier/CV
