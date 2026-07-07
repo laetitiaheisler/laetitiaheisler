@@ -16,7 +16,8 @@
 - [x] Decap CMS installé (`admin/index.html` + `admin/config.yml`)
 - [x] Contenu extrait dans `_content/` (about.json, contact.json, workshops.json, works/*.md, news/*.md)
 - [x] Projet Cloudflare Pages déployé (Worker URL temporaire)
-- [x] Notice utilisateur : `NOTICE_UTILISATION.md`
+- [x] Notice utilisateur : `NOTICE_UTILISATION.md` (locale uniquement, .gitignore)
+- [x] Doc de suivi : `cloudFlare_laetitiaheisler_site.md`
 
 ### Comptes
 
@@ -57,7 +58,7 @@
 │   ├── works/          # 8 œuvres (markdown)
 │   └── news/           # 5 actualités (markdown)
 ├── images/             # Photos du site
-├── NOTICE_UTILISATION.md
+├── NOTICE_UTILISATION.md   # Locale uniquement (.gitignore)
 └── cloudFlare_laetitiaheisler_site.md
 ```
 
